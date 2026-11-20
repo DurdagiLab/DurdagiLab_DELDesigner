@@ -1,0 +1,76 @@
+DNA-ENCODED LIBRARY DESIGN — how to use this
+============================================
+
+There are two ways in. Both run the same chemistry rules and, on the same
+design, give the same compounds.
+
+
+A. IN A WEB BROWSER — nothing to install
+----------------------------------------
+Double-click  DEL_designer.html
+
+It opens in your browser and works with no internet connection. You pick the
+reaction for each cycle, or write your own, paste in your building blocks, and
+the page tells you which reagents it had to reject and why, checks that the
+synthesis can be carried through to the last cycle, builds the compounds and
+draws them. You can download the compounds as a CSV for Excel or as a SMILES
+file for chemistry software, and the design itself as a JSON file you can load
+back later or send to someone else.
+
+The page opens with a worked three-cycle library already filled in, so press
+"Check my design" and then "Build" to see what it does before changing
+anything.
+
+Every compound is shown with the DNA sequence that encodes it, underneath its
+structure, with the codons picked out in colour. That sequence is how the
+compound is identified after a selection: the compounds themselves are gone by
+then and only the DNA is read back. The codon length and how far apart the
+codons must be are both set under "Build the compounds"; farther apart means
+a miscalled base can be repaired rather than losing the read.
+
+DEL_viewer.html is the older, fixed page: four ready-made libraries to browse
+with sliders, no design of your own.
+
+If structures do not appear, the page says so and lists compounds as text
+instead. Try a different browser — Chrome, Edge, Firefox and Safari all work.
+
+
+B. IN PYTHON — for large libraries and anything downstream
+-----------------------------------------------------------
+    pip install -e .
+
+Then either edit a plain script:
+
+    python examples/design_your_own.py
+    python examples/design_your_own.py --n 20000 --out my_library.smi
+
+(the reactions, the reagent lists and the property limits are constants at the
+top of that file, with comments explaining each one), or work from a design
+file:
+
+    python -m deldesign init my_library.json --self-contained
+    python -m deldesign check    my_library.json
+    python -m deldesign encoding my_library.json --simulate 20000
+    python -m deldesign profile  my_library.json -n 20000
+    python -m deldesign enumerate my_library.json --out all.smi
+
+To see every generated compound with its synthetic-accessibility score, its
+DNA tag and all its other properties, as a spreadsheet:
+
+    python -m deldesign sample my_library.json -n 2000 --csv --dna --out sample.csv
+
+The SA score is computed in Python only. The browser page cannot compute it:
+the published score needs fingerprint data that RDKit's browser build does not
+expose, and a lookalike number under the same name would be worse than none.
+
+A design you made in the browser carries straight over:
+
+    python -m deldesign import my_design.json -o my_library.json
+    python -m deldesign check my_library.json
+
+Use Python rather than the browser when the library is large, when you want
+3D shape profiles, scaffold counts or diverse subsets, or when the compounds
+are going into docking or a model afterwards.
+
+README.md explains the rules the two front ends share and what they do not
+claim to predict.
