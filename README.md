@@ -1,3 +1,19 @@
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/istmed.png" width="400" alt="Sol Görsel" />
+      <br />
+      <sub><b>Sol Görsel Başlığı</b></sub>
+    </td>
+    <td width="40"></td> <!-- İki görsel arasındaki boşluk -->
+    <td align="center">
+      <img src="assets/durdagilab.png" width="400" alt="Sağ Görsel" />
+      <br />
+      <sub><b>Sağ Görsel Başlığı</b></sub>
+    </td>
+  </tr>
+</table>
+
 # DELDesign — reaction-constrained virtual DEL design
 
 WP1 of the in-silico DNA-encoded library project. It enumerates only what
