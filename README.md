@@ -3,16 +3,17 @@
     <td align="center">
       <img src="istmed.png" width="400" alt="Sol Görsel" />
       <br />
-      <sub><b>Sol Görsel Başlığı</b></sub>
+      <a href="https://durdagilab.com"><b>Site 1</b></a>
     </td>
     <td width="40"></td> <!-- İki görsel arasındaki boşluk -->
     <td align="center">
       <img src="durdagilab.png" width="400" alt="Sağ Görsel" />
       <br />
-      <sub><b>Sağ Görsel Başlığı</b></sub>
+      <a href="https://istanbulmedchem.com"><b>Site 2</b></a>
     </td>
   </tr>
 </table>
+
 
 # DELDesign — reaction-constrained virtual DEL design
 
