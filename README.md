@@ -1,13 +1,13 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="assets/istmed.png" width="400" alt="Sol Görsel" />
+      <img src="istmed.png" width="400" alt="Sol Görsel" />
       <br />
       <sub><b>Sol Görsel Başlığı</b></sub>
     </td>
     <td width="40"></td> <!-- İki görsel arasındaki boşluk -->
     <td align="center">
-      <img src="assets/durdagilab.png" width="400" alt="Sağ Görsel" />
+      <img src="durdagilab.png" width="400" alt="Sağ Görsel" />
       <br />
       <sub><b>Sağ Görsel Başlığı</b></sub>
     </td>
