@@ -3,13 +3,13 @@
     <td align="center">
       <img src="istmed.png" width="400" alt="Sol Görsel" />
       <br />
-      <a href="https://durdagilab.com"><b>Site 1</b></a>
+      <a href="https://istanbulmedchem.com"><b>IstanbulMedChem</b></a>
     </td>
     <td width="40"></td> <!-- İki görsel arasındaki boşluk -->
     <td align="center">
       <img src="durdagilab.png" width="400" alt="Sağ Görsel" />
       <br />
-      <a href="https://istanbulmedchem.com"><b>Site 2</b></a>
+      <a href="https://durdagilab.com"><b>DurdagiLab</b></a>
     </td>
   </tr>
 </table>
