@@ -1,4 +1,4 @@
-# deldesign — reaction-constrained virtual DEL design
+# DELDesign — reaction-constrained virtual DEL design
 
 WP1 of the in-silico DNA-encoded library project. It enumerates only what
 on-DNA chemistry and commercially available reagents could actually have made,
