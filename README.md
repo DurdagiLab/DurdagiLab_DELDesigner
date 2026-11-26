@@ -1,7 +1,7 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="istmed.png" width="400" alt="Sol Görsel" />
+      <img src="istanbul-medchem-logo.png" width="400" alt="Sol Görsel" />
       <br />
       <a href="https://istanbulmedchem.com"><b>IstanbulMedChem</b></a>
     </td>
